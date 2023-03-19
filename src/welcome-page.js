@@ -25,12 +25,12 @@ function createPage () {
     const main = document.createElement("main");
     main.classList.add('main')
 
-    const welcomeCntr = document.createElement("div");
-    welcomeCntr.classList.add('welcome-cntr')
+    // const welcomeCntr = document.createElement("div");
+    // welcomeCntr.classList.add('welcome-cntr')
 
-    const welcomeMsg = document.createElement("h2");
-    welcomeMsg.classList.add('welcome-msg')
-    welcomeMsg.textContent = 'Eat Gluten Not Meat'
+    // const welcomeMsg = document.createElement("h2");
+    // welcomeMsg.classList.add('welcome-msg')
+    // welcomeMsg.textContent = 'Eat Gluten Not Meat'
 
     const footer = document.createElement('footer')
 
@@ -46,10 +46,11 @@ function createPage () {
     buttonContainer.appendChild(welcomeButton)
     buttonContainer.appendChild(menuButton)
     buttonContainer.appendChild(contactButton)
-    main.append(welcomeCntr)
-    welcomeCntr.appendChild(welcomeMsg)
+    // main.append(welcomeCntr)
+    // welcomeCntr.appendChild(welcomeMsg)
     footer.appendChild(footerMsg)
 
+    return {welcomeButton, menuButton, contactButton}
 }
 
 export default createPage
