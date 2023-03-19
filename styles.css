@@ -13,10 +13,10 @@
 
 body {
     min-height: 100vh;
+    font-family: var(--main-font);
 }
 
 header {
-    font-family: var(--main-font);
     font-weight: 900;
     width: 100%;
     height: 20vh;
@@ -51,7 +51,6 @@ h1 {
 }
 
 footer {
-    font-family: var(--main-font);
     min-height: 10vh;
     width: 100%;
     background-color: #52b1f129;
@@ -64,7 +63,7 @@ footer {
 
 .main {
     background-color: #60a5fa;
-    background-image: url(./seitan.jpeg);
+    /* background-image: url(./seitan.jpeg); */
     background-repeat: repeat;
     /* background-size: cover; */
     height: 90vh;
@@ -72,10 +71,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: default;
+}
+
+.main.welcome {
+    background-color: #ddeaf7;
 }
 
 .welcome-cntr {
-    font-family: 'Londrina Solid';
     background-color: #ddeaf7;
 
     width: 30%;
@@ -89,6 +92,7 @@ footer {
 }
 
 .welcome-cntr>h2 {
+    color:slateblue;
     font-size: 2.5rem;
     font-weight: 900;
 }
@@ -99,7 +103,7 @@ footer {
 
 /* MENU PAGE STYLING */
 
-.main-menu {
+.main.menu {
     background-color: #60a5fa;
     height: 90vh;
     width: 100%;
@@ -111,14 +115,14 @@ footer {
 .menu-container {
     height: 80%;
     width: 70%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
 .container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,12 +130,15 @@ footer {
     padding: 5px;
 }
 
+
 .picture-container {
     width: 175px;
-    /* border-radius: 100px; */
 }
 
-.seitan-burger {
+.seitan-burger,
+.seitan-burger-with-fries,
+.seitan-strips,
+.party-box {
    height: 175px;
    width: 175px;
    border-radius: 50%;
@@ -146,3 +153,46 @@ footer {
     /* border: 1px solid black; */
     height: 175px;
 }
+
+/* CONTACT MAIN PAGE STYLING */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 80%;
+    padding: 40px 0;
+    border: 1px solid black;
+    background-color: #cffafe;
+    border-radius: 10px;
+}
+
+
+.contact-container>* {
+    /* border: 1px solid black; */
+    width: 80%;
+}
+
+.list {
+    /* margin-left: -5px; */
+    margin-top: -20px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+}
+
+.list>li {
+    /* border: 1px solid black; */
+    position: relative;
+    left: -40px;
+    display: inline-block;
+    list-style-type: none;
+    align-self: flex-start;
+    width: 100%;
+}
+
