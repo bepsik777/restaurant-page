@@ -3,9 +3,6 @@ function createPage () {
 
     const header = document.createElement("header");
 
-    // const title = document.createElement("h1");
-    // title.classList.add('title')
-    // title.textContent = 'Eat Gluten Not Meat'
 
     const buttonContainer = document.createElement("div");
     buttonContainer.classList.add('button-container')
