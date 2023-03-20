@@ -9,7 +9,7 @@ import makeContactMain from "./contact.js"
 
 const buttons = makeWelcomePage()
 makeWelcomeMain()
-makeContactMain()
+// makeContactMain()
 
 buttons.menuButton.addEventListener('click', makeMenuPage)
 buttons.welcomeButton.addEventListener('click', makeWelcomeMain)

@@ -3,23 +3,23 @@ function createPage () {
 
     const header = document.createElement("header");
 
-    const title = document.createElement("h1");
-    title.classList.add('title')
-    title.textContent = 'Eat Gluten Not Meat'
+    // const title = document.createElement("h1");
+    // title.classList.add('title')
+    // title.textContent = 'Eat Gluten Not Meat'
 
     const buttonContainer = document.createElement("div");
     buttonContainer.classList.add('button-container')
 
     const welcomeButton = document.createElement("button");
-    welcomeButton.classList.add('welcome')
+    welcomeButton.classList.add('welcome-button')
     welcomeButton.textContent = 'Welcome'
 
     const menuButton = document.createElement("button");
-    menuButton.classList.add('menu')
+    menuButton.classList.add('menu-button')
     menuButton.textContent = 'Menu'
 
     const contactButton = document.createElement("button");
-    contactButton.classList.add('contact')
+    contactButton.classList.add('contact-button')
     contactButton.textContent = 'Contact us'
 
     const main = document.createElement("main");
@@ -41,7 +41,7 @@ function createPage () {
     content.appendChild(header)
     content.appendChild(main)
     content.appendChild(footer)
-    header.appendChild(title)
+    // header.appendChild(title)
     header.appendChild(buttonContainer)
     buttonContainer.appendChild(welcomeButton)
     buttonContainer.appendChild(menuButton)

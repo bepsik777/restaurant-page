@@ -1,5 +1,6 @@
 function createMenu () {
     const content = document.getElementById('content')  
+
     
     // SEITAN BURGER
     const seitanBurger = document.createElement('img')
